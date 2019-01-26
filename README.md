@@ -1,6 +1,10 @@
-# Myapp
+# MYAPP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
+
+## Information
+This project is for example using sidebar with integrated nav-bar. 
+Developer: Ronaldo Torre
 
 ## Development server
 
