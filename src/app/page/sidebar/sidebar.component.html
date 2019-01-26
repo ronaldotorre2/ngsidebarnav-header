@@ -1,0 +1,31 @@
+<!-- sidebar open -->
+<div id="sidebar" class="collapse navbar-collapse" [ngbCollapse]="sidebarOpen">
+    <div id="sidebar_header">
+      <span class="col-2"><span class="sidebar_title">{{title}}</span></span>
+      <span class="col-4">
+          <button type="button" class="btn sidebar_button_close close" (click)=sidebar();><i class="fa fa-toggle-on"></i></button>
+      </span>
+    </div>
+    <div id="menu">
+      <ul *ngFor="let menu of menu">
+        <i class="{{menu.Icon}} menu_marge_right"></i><a href="{{menu.Url}}">{{menu.Name}}</a>
+        <ul *ngFor="let item of menu.Itens">
+          <a href="{{item.Url}}">{{item.Name}}</a>
+        </ul>
+      </ul>
+    </div>
+</div>
+
+<!-- sidebar close -->
+<div id="sidebarclose" [ngbCollapse]="sidebarClose">
+    <div id="sidebar_header">
+        <span class="col-2"><a (click)="sidebar();"><span class="btn sidebar_title_close">{{title}}</span></a></span>
+    </div>
+    <div id="menu_small">
+        <ul *ngFor="let menu of menu">
+          <div class="row">
+            <a href="{{menu.Url}}"><button type="button" class="btn btn-primary menu_small_button" title="{{menu.Name}}"><i class="{{menu.Icon}}"></i></button></a>
+          </div>
+        </ul>
+    </div>
+</div>

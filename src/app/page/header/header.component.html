@@ -1,0 +1,19 @@
+<app-sidebar></app-sidebar>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark ">
+   <div id="nav_title"><a class="navbar-brand navtitle" href="#">{{title}}</a></div>
+  <span>{{environment}}</span>
+  <span id="navSpace" class="navSpace"></span>
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <div class="form-group findbox">
+          <form id="frmFind">
+            <input type="text" id="txtfind" name="txtfind" placeholder="{{findPlaceholder}}" class="form-control findInput">
+            <button type="button" id="btnFind" name="btnFind" class="btn findButton"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </li>
+      <li class="nav-item">
+         <div class="userheader"><a class="nav-link" routerLink="/home" routerLinkActive="active"><i class="fa fa-user"></i> {{UserLogin}}</a></div>
+      </li>
+  </ul>
+</nav>

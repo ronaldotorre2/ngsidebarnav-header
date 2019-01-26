@@ -1,0 +1,47 @@
+.navbar{
+  width: 83.9%;
+  height: 52px;
+  margin-top: -425px;
+  float: right;
+}
+
+#navbar{
+  background-color: #58ACFA;
+}
+
+.navtitle{
+  width: 260px;
+  font-size: 12pt;
+}
+
+.navSpace{
+  width: 40%;
+}
+
+.findbox{
+  width: 210px;
+  margin-top: 2px;
+}
+
+.findInput{
+  width: 144px;
+  border:1px solid #58ACFA;
+  float: left;
+}
+
+.findButton{
+  width: 30px;
+  height: 38px;
+  float: left;
+  color: white;
+  border: 0;
+}
+
+.findButton:hover{
+  border: 0;
+}
+
+.userheader{
+  width: 140px;
+  height: 30px;
+}
